@@ -11,7 +11,7 @@ const user = [];
 app.post("/profile", (req,res) => {
     try{
         const {name,age,role} = req.body;
-        if(!name || age===undefined){
+        if(!name || age===undefined || !role){
             res.status(400).json({sucess:false, message:"mention a name, age and role of the user."});
         }
         const new_user = [{
