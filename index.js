@@ -34,10 +34,10 @@ app.get("/profile", async(req,res) => {
             age: 17
         }];
         if(sex && age){
-            if(String(sex)=="Female"){
+            if(String(sex)==="Female"){
                 res.status(200).json({sucess:true, message:"success", data:user});
             }
-            else if(String(sex)=="Male" && Number(age)>18){
+            else if(String(sex)==="Male" && Number(age)>18){
                 res.status(200).json({sucess:true, message:"success", data:user});
             }
             else{
