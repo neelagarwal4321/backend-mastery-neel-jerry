@@ -18,7 +18,7 @@ app.post("/profile", (req,res) => {
             id: Date.now(),
             name,
             age,
-            role: role||"default"
+            role: role||"Default"
         }];
         user.push(new_user);
         res.status(201).json({sucess:true, message:"success, new user created", data:user});
