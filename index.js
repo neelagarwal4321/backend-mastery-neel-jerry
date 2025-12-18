@@ -11,6 +11,7 @@ app.get("/profile", async(req,res) => {
     try{
         // we are passing the query in the url with these params
         const {sex, age} = req.query;
+        // all objects
         const user = [{
             id: 100,
             name: "Neel",
