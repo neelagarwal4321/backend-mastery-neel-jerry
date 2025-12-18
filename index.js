@@ -10,8 +10,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/profile", async(req,res) => {
     try{
         // we are passing the query in the url with these params
-        const {sex} = req.query;
-        const {age} = req.query;
+        const {sex, age} = req.query;
         const user = [{
             id: 100,
             name: "Neel",
