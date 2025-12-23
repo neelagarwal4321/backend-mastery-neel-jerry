@@ -3,6 +3,8 @@ const app = express();
 
 app.use(express.json());
 
+// get api practice
+
 app.get("/profile", async(req, res) => {
     try{
         const {id} = req.query;
