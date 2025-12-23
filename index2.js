@@ -30,6 +30,8 @@ app.get("/profile", async(req, res) => {
     }
 });
 
+// post api practice 
+
 app.post("/cart", (req,res) => {
     try{
         const {item, qty} = req.body;
