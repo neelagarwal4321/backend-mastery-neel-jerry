@@ -50,7 +50,6 @@ app.post("/cart", (req,res) => {
 });
 
 // REVIEW APIs creation (post and get)
-
 const review = [];
 
 app.post("/reviews", (req,res) => {
